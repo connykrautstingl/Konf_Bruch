@@ -19,7 +19,6 @@ public class Bruch {
     public double toDecimal() {
         // TODO: Die Methode soll den Dezimalwert zum Bruch retournieren
         // Achtung: Ganzzahldivision!
-
         double result = denominator/numerator;
         return result;
     }
@@ -29,7 +28,7 @@ public class Bruch {
         return denominator + " / " + numerator;
     }
 
-    public Bruch multiplicate(Bruch b2) {
+    public double multiplicate(Bruch b2) {
         /* TODO:
         *  Erstellen Sie für das Ergebnis eine neue Bruch-Variable
         *   => Übergeben Sie im Konstruktur für numerator den
@@ -38,8 +37,11 @@ public class Bruch {
         *  Retournieren Sie ihre neue Bruch-Variable
         * */
 
-
-        return null;
+        double newNumerator = numerator * b2.getNumerator();
+        double newDenominator = denominator * b2.getNumerator();
+        double newBruch = newNumerator/newDenominator;
+        return newBruch;
+    //    return null;
     }
 
     public Bruch multiplicate(Bruch b2,  Bruch b3) {
